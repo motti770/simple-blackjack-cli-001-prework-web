@@ -4,7 +4,7 @@ describe "#welcome" do
     welcome
   end
 end
-
+ 
 describe "#deal_card" do
   it "generates a random number between 1-11" do
     20.times do 
@@ -76,7 +76,7 @@ describe "#hit?" do
       "s"
     end
   end
-
+  
   it "calls on #prompt_user then #get_user_input" do
     expect($stdout).to receive(:puts).with("Type 'h' to hit or 's' to stay")
     expect(self).to receive(:get_user_input).and_return("s")
